@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" version="1.1" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <!-- Real Estate Gradient -->
+  <linearGradient id="real-estate" x1="0" x2="800" y1="300" y2="300" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#3b82f6" offset="0"/>
+   <stop stop-color="#1d4ed8" offset="1"/>
+  </linearGradient>
+  <!-- Events Gradient -->
+  <linearGradient id="events" x1="0" x2="800" y1="300" y2="300" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#8b5cf6" offset="0"/>
+   <stop stop-color="#6d28d9" offset="1"/>
+  </linearGradient>
+  <!-- Commercial Gradient -->
+  <linearGradient id="commercial" x1="0" x2="800" y1="300" y2="300" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#10b981" offset="0"/>
+   <stop stop-color="#047857" offset="1"/>
+  </linearGradient>
+ </defs>
+ 
+ <!-- Real Estate Template -->
+ <g id="real-estate-template">
+  <rect width="800" height="600" fill="url(#real-estate)"/>
+  <path d="m350 200 100-75 100 75v200h-200z" fill="#fff" fill-opacity=".15"/>
+  <text x="400" y="300" dominant-baseline="middle" fill="#fff" font-family="Arial" font-size="24px" text-anchor="middle">Real Estate Drone Shot</text>
+ </g>
+ 
+ <!-- Events Template -->
+ <g id="events-template">
+  <rect width="800" height="600" fill="url(#events)"/>
+  <circle cx="400" cy="300" r="150" fill="#fff" fill-opacity=".15"/>
+  <text x="400" y="300" dominant-baseline="middle" fill="#fff" font-family="Arial" font-size="24px" text-anchor="middle">Event Coverage</text>
+ </g>
+ 
+ <!-- Commercial Template -->
+ <g id="commercial-template">
+  <rect width="800" height="600" fill="url(#commercial)"/>
+  <rect x="250" y="200" width="300" height="200" fill="#fff" fill-opacity=".15"/>
+  <text x="400" y="300" dominant-baseline="middle" fill="#fff" font-family="Arial" font-size="24px" text-anchor="middle">Commercial Project</text>
+ </g>
+</svg>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | DroneX - Professional Aerial Cinematography</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-drone-alt text-blue-600 text-3xl mr-2"></i>
+                        <span class="text-2xl font-bold text-gray-800">DroneX</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-blue-600 font-medium">About</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Portfolio</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-600 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm text-blue-600 bg-gray-50">About</a>
+            <a href="portfolio.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Portfolio</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+        <div class="absolute top-0 w-full h-full">
+            <img src="assets/images/Event-Placeholder3.jpg" alt="About Us Hero Image" class="w-full h-full object-cover">
+            <span id="blackOverlay" class="w-full h-full absolute opacity-30 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-12">
+                        <h1 class="text-white font-semibold text-5xl">
+                            Our Story
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-200">
+                            Pioneering aerial cinematography with passion, precision, and professionalism
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="relative py-20">
+        <div class="container mx-auto px-4">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+                    <div class="md:pr-12">
+                        <h3 class="text-3xl font-semibold">A Passion for Aerial Excellence</h3>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                            Founded in 2018, DroneX has quickly become a leader in aerial cinematography. Our journey began with a simple vision: to capture the world from perspectives never seen before.
+                        </p>
+                        <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                            Today, we serve clients across various industries, from real estate and construction to events and entertainment, delivering stunning aerial footage that exceeds expectations.
+                        </p>
+                        <ul class="list-none mt-6">
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div class="text-blue-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-100">
+                                        <i class="fas fa-medal"></i>
+                                    </div>
+                                    <div class="flex-1 ml-4">
+                                        <h4 class="text-xl font-semibold">Professional Excellence</h4>
+                                        <p class="mt-2 text-gray-600">Licensed pilots with extensive training and experience</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="py-2">
+                                <div class="flex items-center">
+                                    <div class="text-blue-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-100">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <div class="flex-1 ml-4">
+                                        <h4 class="text-xl font-semibold">Cutting-Edge Equipment</h4>
+                                        <p class="mt-2 text-gray-600">Latest drone technology and 4K cameras</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="pt-20 pb-48">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center text-center mb-24">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h2 class="text-4xl font-semibold">Meet Our Team</h2>
+                    <p class="text-lg leading-relaxed m-4 text-gray-600">
+                        Our experienced team of professionals is dedicated to delivering exceptional aerial cinematography
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <!-- Team Member 1 -->
+                <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img src="assets/images/portfolio-placeholders.svg" alt="John Anderson" class="shadow-lg rounded-full w-32 h-32 mx-auto object-cover">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">John Anderson</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">Lead Pilot & Founder</p>
+                            <div class="mt-6">
+                                <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-linkedin"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img src="assets/images/portfolio-placeholders.svg" alt="Sarah Chen" class="shadow-lg rounded-full w-32 h-32 mx-auto object-cover">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Sarah Chen</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">Creative Director</p>
+                            <div class="mt-6">
+                                <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-linkedin"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+                    <div class="px-6">
+                        <img src="assets/images/portfolio-placeholders.svg" alt="Mike Roberts" class="shadow-lg rounded-full w-32 h-32 mx-auto object-cover">
+                        <div class="pt-6 text-center">
+                            <h5 class="text-xl font-bold">Mike Roberts</h5>
+                            <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">Technical Director</p>
+                            <div class="mt-6">
+                                <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                                    <i class="fab fa-linkedin"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="pb-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center mt-32">
+                <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                    <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                        Our Equipment
+                    </h3>
+                    <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                        We invest in the latest drone technology and camera equipment to ensure the highest quality aerial footage for our clients.
+                    </p>
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold">Featured Equipment:</h4>
+                        <ul class="list-disc ml-5 mt-3 text-gray-700">
+                            <li class="py-1">DJI Inspire 2 with Zenmuse X7 Camera</li>
+                            <li class="py-1">DJI Mavic 3 Pro</li>
+                            <li class="py-1">Custom FPV Racing Drones</li>
+                            <li class="py-1">4K & 6K Camera Systems</li>
+                            <li class="py-1">Professional Grade Stabilization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blue-600">
+                        <img src="assets/images/portfolio-placeholders.svg" alt="Drone Equipment" class="w-full align-middle rounded-t-lg">
+                        <blockquote class="relative p-8 mb-4">
+                            <h4 class="text-xl font-bold text-white">
+                                State of the Art Technology
+                            </h4>
+                            <p class="text-md font-light mt-2 text-white">
+                                Our equipment is regularly maintained and updated to ensure we're always delivering the best possible results for our clients.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-drone-alt text-blue-500 text-3xl mr-2"></i>
+                    <span class="text-2xl font-bold text-white">DroneX</span>
+                </div>
+                <p class="text-gray-400 mb-4">Professional drone services for aerial photography, videography, and cinematography. Serving clients worldwide with exceptional aerial footage.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="hover:text-blue-500 transition-colors duration-300">About Us</a></li>
+                    <li><a href="portfolio.html" class="hover:text-blue-500 transition-colors duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-500 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2024 DroneX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
