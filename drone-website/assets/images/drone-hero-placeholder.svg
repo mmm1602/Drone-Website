@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" version="1.1" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="a" x1="0" x2="1920" y1="540" y2="540" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#1a365d" offset="0"/>
+   <stop stop-color="#2563eb" offset="1"/>
+  </linearGradient>
+ </defs>
+ <rect width="1920" height="1080" fill="url(#a)"/>
+ <g fill="#fff" fill-opacity=".15">
+  <circle cx="960" cy="540" r="200"/>
+  <path d="m760 440h400v200h-400z"/>
+  <path d="m860 340h200v400h-200z"/>
+ </g>
+ <text x="960" y="540" dominant-baseline="middle" fill="#fff" font-family="Arial" font-size="48px" text-anchor="middle">Aerial View Placeholder</text>
+</svg>
