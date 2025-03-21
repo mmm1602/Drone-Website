@@ -1,0 +1,24 @@
+This directory contains the following image files needed for the website:
+
+1. drone-hero.jpg - Hero section background image
+2. about-hero.jpg - About page hero background
+3. project1.jpg - Real estate drone shot
+4. project2.jpg - Event coverage shot
+5. project3.jpg - Commercial project shot
+6. portfolio1.jpg - Luxury estate aerial view
+7. portfolio2.jpg - Music festival aerial coverage
+8. portfolio3.jpg - Corporate campus aerial tour
+9. portfolio4.jpg - Beachfront property
+10. portfolio5.jpg - Sports event coverage
+11. portfolio6.jpg - Construction progress
+12. team1.jpg - John Anderson photo
+13. team2.jpg - Sarah Chen photo
+14. team3.jpg - Mike Roberts photo
+15. equipment.jpg - Drone equipment photo
+
+Note: For a production website, replace these placeholder references with actual high-quality images.
+Recommended image specifications:
+- Hero images: 1920x1080px
+- Portfolio images: 800x600px
+- Team member photos: 400x400px
+- Equipment photos: 800x600px
