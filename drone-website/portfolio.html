@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | DroneX - Professional Aerial Cinematography</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .modal {
+            transition: opacity 0.25s ease;
+        }
+        .modal-active {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-drone-alt text-blue-600 text-3xl mr-2"></i>
+                        <span class="text-2xl font-bold text-gray-800">DroneX</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                    <a href="portfolio.html" class="text-blue-600 font-medium">Portfolio</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-600 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">About</a>
+            <a href="portfolio.html" class="block py-2 px-4 text-sm text-blue-600 bg-gray-50">Portfolio</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <div class="pt-24 pb-12 md:pt-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">Our Portfolio</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explore our collection of stunning aerial cinematography across various industries and projects
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+        <div class="flex flex-wrap justify-center gap-4">
+            <button class="filter-btn active bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300" data-filter="all">
+                All Projects
+            </button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300" data-filter="real-estate">
+                Real Estate
+            </button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300" data-filter="events">
+                Events
+            </button>
+            <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition-colors duration-300" data-filter="commercial">
+                Commercial
+            </button>
+        </div>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item real-estate" data-category="real-estate">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="assets/images/RealEstate-Placeholder1.jpg" alt="Luxury Estate Aerial View" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <button class="view-project bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300" 
+                                    data-video="assets/videos/placeholder-video.html"
+                                    data-title="Luxury Estate Showcase"
+                                    data-description="Aerial footage of a stunning luxury estate in Beverly Hills, showcasing the property's expansive grounds and architectural beauty.">
+                                <i class="fas fa-play mr-2"></i> Play Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Luxury Estate Showcase</h3>
+                        <p class="text-gray-600">Beverly Hills, CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item events" data-category="events">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="assets/images/Event-Placeholder3.jpg" alt="Music Festival Aerial Coverage" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <button class="view-project bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"
+                                    data-video="assets/videos/placeholder-video.html"
+                                    data-title="Summer Music Festival"
+                                    data-description="Dynamic aerial coverage of a major music festival, capturing the energy and scale of the event from above.">
+                                <i class="fas fa-play mr-2"></i> Play Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Summer Music Festival</h3>
+                        <p class="text-gray-600">Coachella Valley, CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item commercial" data-category="commercial">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="assets/images/Event-Placeholder1.jpg" alt="Corporate Campus Aerial Tour" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <button class="view-project bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"
+                                    data-video="assets/videos/placeholder-video.html"
+                                    data-title="Tech Campus Tour"
+                                    data-description="A comprehensive aerial tour of a modern tech company campus, highlighting its innovative architecture and sustainable design.">
+                                <i class="fas fa-play mr-2"></i> Play Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Tech Campus Tour</h3>
+                        <p class="text-gray-600">Silicon Valley, CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Portfolio Items... -->
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item real-estate" data-category="real-estate">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="assets/images/RealEstate-Placeholder2.jpg" alt="Beachfront Property" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <button class="view-project bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"
+                                    data-video="assets/videos/placeholder-video.html"
+                                    data-title="Oceanfront Villa"
+                                    data-description="Breathtaking aerial views of a luxury beachfront property, showcasing its private beach access and infinity pool.">
+                                <i class="fas fa-play mr-2"></i> Play Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Oceanfront Villa</h3>
+                        <p class="text-gray-600">Malibu, CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio-item events" data-category="events">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="assets/images/Car-Placeholder1.jpg" alt="Sports Event Coverage" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <button class="view-project bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"
+                                    data-video="assets/videos/placeholder-video.html"
+                                    data-title="Marathon Event Coverage"
+                                    data-description="Dynamic aerial coverage of a major city marathon, tracking runners through iconic city landmarks.">
+                                <i class="fas fa-play mr-2"></i> Play Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Marathon Event Coverage</h3>
+                        <p class="text-gray-600">Los Angeles, CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio-item commercial" data-category="commercial">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="assets/images/Industrial-Placeholder2.jpg" alt="Construction Progress" class="w-full h-64 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <button class="view-project bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"
+                                    data-video="assets/videos/placeholder-video.html"
+                                    data-title="Construction Progress"
+                                    data-description="Monthly progress tracking of a major construction project, showcasing the development from groundbreaking to completion.">
+                                <i class="fas fa-play mr-2"></i> Play Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Construction Progress</h3>
+                        <p class="text-gray-600">San Francisco, CA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center z-50">
+        <div class="modal-overlay absolute w-full h-full bg-black opacity-75"></div>
+        
+        <div class="modal-container bg-white w-11/12 md:max-w-4xl mx-auto rounded-lg shadow-lg z-50 overflow-y-auto">
+            <div class="modal-content py-4 text-left px-6">
+                <!-- Modal Header -->
+                <div class="flex justify-between items-center pb-3">
+                    <h3 class="text-2xl font-bold text-gray-900" id="modal-title"></h3>
+                    <button class="modal-close cursor-pointer z-50">
+                        <i class="fas fa-times text-gray-600 hover:text-gray-800 text-2xl"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="my-5">
+                    <div class="relative" style="padding-top: 56.25%">
+                            <iframe id="modal-video" class="absolute inset-0 w-full h-full" src="assets/videos/placeholder-video.html" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-gray-600 mt-4" id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-drone-alt text-blue-500 text-3xl mr-2"></i>
+                    <span class="text-2xl font-bold text-white">DroneX</span>
+                </div>
+                <p class="text-gray-400 mb-4">Professional drone services for aerial photography, videography, and cinematography. Serving clients worldwide with exceptional aerial footage.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="hover:text-blue-500 transition-colors duration-300">About Us</a></li>
+                    <li><a href="portfolio.html" class="hover:text-blue-500 transition-colors duration-300">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-500 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2024 DroneX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Portfolio filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-blue-600', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                });
+
+                // Add active class to clicked button
+                button.classList.remove('bg-gray-200', 'text-gray-700');
+                button.classList.add('bg-blue-600', 'text-white');
+
+                const filter = button.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal functionality
+        const modal = document.querySelector('.modal');
+        const modalClose = document.querySelector('.modal-close');
+        const modalOverlay = document.querySelector('.modal-overlay');
+        const modalVideo = document.querySelector('#modal-video');
+        const modalTitle = document.querySelector('#modal-title');
+        const modalDescription = document.querySelector('#modal-description');
+
+        // Open modal
+        document.querySelectorAll('.view-project').forEach(button => {
+            button.addEventListener('click', () => {
+                const videoSrc = button.getAttribute('data-video');
+                const title = button.getAttribute('data-title');
+                const description = button.getAttribute('data-description');
+
+                modalVideo.src = videoSrc;
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.classList.add('modal-active');
+            });
+        });
+
+        // Close modal
+        const closeModal = () => {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            document.body.classList.remove('modal-active');
+            modalVideo.pause();
+            modalVideo.currentTime = 0;
+        };
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

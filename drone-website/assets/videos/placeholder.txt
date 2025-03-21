@@ -1,0 +1,28 @@
+This directory contains the following video files needed for the portfolio:
+
+1. real-estate-1.mp4 - Luxury Estate Showcase video
+2. real-estate-2.mp4 - Oceanfront Villa video
+3. event-1.mp4 - Summer Music Festival coverage
+4. event-2.mp4 - Marathon Event Coverage
+5. commercial-1.mp4 - Tech Campus Tour
+6. commercial-2.mp4 - Construction Progress Tracking
+
+Note: For a production website, replace these placeholder references with actual high-quality drone footage videos.
+Recommended video specifications:
+- Resolution: 1920x1080 (Full HD) or 3840x2160 (4K)
+- Format: MP4 with H.264 codec
+- Aspect Ratio: 16:9
+- Frame Rate: 24fps or 30fps
+- Bit Rate: 8-15 Mbps for HD, 35-45 Mbps for 4K
+- Audio: AAC codec, stereo, 48kHz
+- Duration: 1-3 minutes per video
+- File size: Optimized for web delivery (typically under 100MB per video)
+
+Best practices:
+- Include multiple angles and perspectives
+- Smooth, stable footage
+- Professional color grading
+- High dynamic range
+- Clear focus
+- Proper exposure
+- Background music (properly licensed)

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneX - Professional Aerial Cinematography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-[Inter] antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">DroneX</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Portfolio</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <a href="index.html" class="block py-2 px-4 text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+            <a href="portfolio.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 transition-colors duration-300">Portfolio</a>
+            <a href="contact.html" class="block py-2 px-4 text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="assets/images/drone-hero.jpg" alt="Aerial view of landscape" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Capture the World from Above</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8">Professional drone cinematography for your next project</p>
+            <div class="space-x-4">
+                <a href="#services" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">View Our Work</a>
+                <a href="contact.html" class="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition-colors duration-300">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Cinematic Drone Service -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-film text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Cinematic Drone Footage</h3>
+                    <p class="text-gray-600 mb-4">
+                        Capture breathtaking aerial cinematography with our professional-grade drones. Perfect for:
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Smooth, stable aerial shots</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>4K/8K resolution filming</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Panoramic landscape views</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Slow, cinematic movements</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- FPV Drone Service -->
+                <div class="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-rocket text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">FPV High Speed Footage</h3>
+                    <p class="text-gray-600 mb-4">
+                        Experience dynamic, high-speed aerial footage with our specialized FPV drones. Perfect for:
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>High-speed chase sequences</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Dynamic action shots</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Immersive perspectives</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i>Through-the-gap flying</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Projects Section -->
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Recent Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="assets/images/RealEstate-Placeholder1.jpg" alt="Real Estate Drone Shot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Luxury Real Estate</h3>
+                        <p class="text-gray-600 mb-4">Aerial photography for high-end property listings</p>
+                        <a href="portfolio.html" class="text-blue-600 hover:text-blue-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="assets/images/Event-Placeholder3.jpg" alt="Event Coverage" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Event Coverage</h3>
+                        <p class="text-gray-600 mb-4">Dynamic aerial footage of outdoor festivals</p>
+                        <a href="portfolio.html" class="text-blue-600 hover:text-blue-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="assets/images/Industrial-Placeholder1.jpeg" alt="Commercial Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Commercial</h3>
+                        <p class="text-gray-600 mb-4">Corporate promotional video campaigns</p>
+                        <a href="portfolio.html" class="text-blue-600 hover:text-blue-700 font-medium">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="bg-blue-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
+                <p class="text-xl text-blue-100 mb-8">Let's create something amazing together</p>
+                <a href="contact.html" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors duration-300">Contact Us Today</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">DroneX</h3>
+                    <p class="text-gray-400">Professional aerial cinematography services for your creative projects.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition-colors duration-300">Portfolio</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Real Estate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Commercial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 DroneX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Mobile menu functionality
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
